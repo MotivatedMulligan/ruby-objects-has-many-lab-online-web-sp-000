@@ -16,8 +16,8 @@ class Post
   end
 ###################################
   def author_name(author)
-    if (self.author.nil?)
-      self.author = Author.new(name)
+    if self.author == nil#(self.author.nil?)
+    nil  #self.author = Author.new(name)
     else
       self.author.name #= name
     end

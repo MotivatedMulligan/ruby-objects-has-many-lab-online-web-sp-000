@@ -14,12 +14,11 @@ class Post
   def author=(author) #works
   @author = author
   end
-###################################
-  def author_name#(author)
-    if self.author == nil#(self.author.nil?)
-    nil  #self.author = Author.new(name)
+  def author_name
+    if self.author == nil
+    nil
     else
-      self.author.name #= name
+      self.author.name
     end
   end
 end

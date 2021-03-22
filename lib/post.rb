@@ -15,11 +15,11 @@ class Post
   @author = author
   end
 ###################################
-  def author_name#(author)
+  def author_name(author)
     if (self.author.nil?)
       self.author = Author.new(name)
     else
-      self.author.name = name
+      self.author.name #= name
     end
   end
 end
